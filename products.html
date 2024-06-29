@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleProd.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Drink&Smile<span>.</span></a>
+        <ul class="menu-links">
+            <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <span id="menu-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+</header>
+<section class="products">
+    <h1 class="title">Coffee</h1>
+    <div class="productContent">
+        <div class="card">
+            <h3>Americano</h3>
+            <img src="image/americano.jpg">
+            <div class="description">
+                <p>$3.50</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Cappuccino</h3>
+            <img src="image/cappuccino.jpg">
+            <div class="description">
+                <p>$2.50</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Caffé Latte</h3>
+            <img src="image/cafféLatte.jpg">
+            <div class="description">
+                <p>$4.00</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Espresso</h3>
+            <img src="image/espresso.jpg">
+            <div class="description">
+                <p>$3.50</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <h1 class="title">Tea</h1>
+    <div class="productContent">
+        <div class="card">
+            <h3>Black Tea</h3>
+            <img src="image/blackTea.jpg">
+            <div class="description">
+                <p>$3.80</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Green Tea</h3>
+            <img src="image/greenTea.jpg">
+            <div class="description">
+                <p>$4.00</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Jasmine Tea</h3>
+            <img src="image/jasmineTea.png">
+            <div class="description">
+                <p>$5.00</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Milk Tea</h3>
+            <img src="image/milkTea.webp">
+            <div class="description">
+                <p>$3.50</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <h1 class="title">Food</h1>
+    <div class="productContent">
+        <div class="card">
+            <h3>Cinnamon Roll</h3>
+            <img src="image/cinnamonRoll.jpg">
+            <div class="description">
+                <p>$2.00</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Almond Roll</h3>
+            <img src="image/almondRoll.jpg">
+            <div class="description">
+                <p>$3.00</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Banana Bread</h3>
+            <img src="image/bananaBread.jpg">
+            <div class="description">
+                <p>$3.50</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Choco Muffin</h3>
+            <img src="image/chocoMuffin.jpg">
+            <div class="description">
+                <p>$3.50</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Chicken Bread</h3>
+            <img src="image/chickenBread.jpg">
+            <div class="description">
+                <p>$3.50</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Tuna Puff</h3>
+            <img src="image/tunaPuff.png">
+            <div class="description">
+                <p>$3.50</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    const header = document.querySelector("header");
+    const menuBtn = document.querySelector("#menu-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    //open mobile menu
+    menuBtn.addEventListener("click", () => {
+        header.classList.toggle("show-mobile-menu");
+    })
+
+    //close mobile menu
+    closeMenuBtn.addEventListener("click", () => {
+        menuBtn.click();
+    })
+</script>
+</body>
+</html>

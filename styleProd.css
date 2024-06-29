@@ -1,0 +1,77 @@
+body{
+
+    background-image: url("image/backgroundWebsite.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.products {
+    padding: 120px 120px;
+
+}
+
+.productContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;/*specifies whether the flexible items should wrap or not.*/
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-color: white;
+}
+.card {
+    background: #C06B3E;
+    width: 21em;
+    border-radius: 10px;
+    box-shadow: 2px 6px 5px #cb8854;
+    text-align: center;
+    padding: 20px 10px;
+    margin: 20px;
+    transition: 0.4s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card img{
+    width: 300px;
+    height: 260px;
+    margin: 8px;
+
+}
+
+.card p{
+    color: white;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.description {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description button {
+    padding: 11px 15px;
+    font-weight: 500;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.description button:hover {
+    background-color: black;
+    color: white;
+}
